@@ -838,7 +838,7 @@ div.comment:first-of-type {
 }
 
 /* For Nav Menu Placeholder */
-#navigation #menu-main-menu ul{
+#navigation .navbar-nav ul{
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: column;
@@ -848,7 +848,7 @@ div.comment:first-of-type {
     list-style: none;
 }
 
-#navigation #menu-main-menu ul a{
+#navigation .navbar-nav ul a{
     color: rgba(255, 255, 255, 0.8);
     display: block;
     padding: 0.5rem 1rem;
@@ -857,7 +857,7 @@ div.comment:first-of-type {
 }
 /* For Nav Menu Placeholder */
 
-#navigation #menu-main-menu li a[aria-current="page"]{
+#navigation .navbar-nav li a[aria-current="page"]{
     text-decoration: underline;
     color: rgba(0, 0, 0, 0.6);
 }
