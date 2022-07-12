@@ -18,7 +18,7 @@
 <body <?php body_class(); ?>>
     
     <header class="header text-center">	    
-	    <a class="site-title pt-lg-4 mb-0" href="/">
+	    <a class="site-title pt-lg-4 mb-0" href="<?php echo esc_url( home_url( '/' ) ) ;?>" rel="home">
 			<?php echo get_bloginfo( 'name' ); ?>
 		</a>
         
@@ -34,12 +34,13 @@
 					if ( function_exists( 'the_custom_logo' ) ) :
 						$custom_logo_id = get_theme_mod( 'custom_logo' );
 						$logo = wp_get_attachment_image_src( $custom_logo_id );
+						?>
+						<a href="<?php echo esc_url( home_url( '/' ) ) ;?>" rel="home">
+							<img class="mb-3 mx-auto logo" src="<?php echo ( $logo[0] != null ) ? $logo[0] : esc_url( get_template_directory_uri() . '/assets/images/logo.png' ) ; ?>" alt="logo" >
+						</a>
+						<?php	
 					endif;
 				?>
-
-				<a href="/">
-					<img class="mb-3 mx-auto logo" src="<?php echo $logo[0]; ?>" alt="logo" >
-				</a>	
 
 				<?php
 				 
