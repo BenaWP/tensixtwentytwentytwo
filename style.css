@@ -836,3 +836,28 @@ div.comment:first-of-type {
     border-color: var(--danger);
     color: #fff;
 }
+
+/* For Nav Menu Placeholder */
+#navigation #menu-main-menu ul{
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+#navigation #menu-main-menu ul a{
+    color: rgba(255, 255, 255, 0.8);
+    display: block;
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+    font-size: 1rem;
+}
+/* For Nav Menu Placeholder */
+
+#navigation #menu-main-menu li a[aria-current="page"]{
+    text-decoration: underline;
+    color: rgba(0, 0, 0, 0.6);
+}
