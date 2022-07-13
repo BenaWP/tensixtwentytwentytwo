@@ -13,11 +13,6 @@ get_header();
 	?>
 </article>
 
-<!-- Istagram Api -->
-<section class="container">
- 	<?php get_template_part( 'template-parts/content', 'instagram-feed' ); ?>
-</section> 
-
 <?php
 get_footer();
 ?>
