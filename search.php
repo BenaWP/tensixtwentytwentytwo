@@ -9,7 +9,7 @@
 
 			while (have_posts()) :
 				the_post();
-				get_template_part( 'template-parts/content', 'blog-home' );
+				get_template_part( 'template-parts/content/content-blog-home' );
 			endwhile;
 
 			// pagination numérique
