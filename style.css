@@ -856,7 +856,7 @@ div.comment:first-of-type {
 }
 
 #navigation .navbar-nav ul a{
-    color: #ef3c77;
+    color: rgba(255, 255, 255, 0.8);
     display: block;
     padding: 0.5rem 1rem;
     font-weight: bold;
