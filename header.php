@@ -56,9 +56,11 @@
 
 					wp_nav_menu( $args );
 				?>
-				<hr>
-				
-				<?php 
+				<hr class="header-hr">
+                <div id="sidebar_search">
+	                <?php get_search_form(); ?>
+                </div>
+				<?php
 					dynamic_sidebar( 'social-links' );
 				?>
 

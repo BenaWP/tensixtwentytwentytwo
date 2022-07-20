@@ -22,7 +22,7 @@
 			<?php
 		else :
 			?><h2><?php echo __( "Désolé, aucun résultats", "tensixtwentytwentytwo" ); ?></h2>
-			<p data-toggle="collapse" data-target="#demo">Refaire la recherche</p>
+			<p data-toggle="collapse" data-target="#demo"><?php _e( 'Refaire la recherche', 'tensixtwentytwentytwo' ); ?></p>
 			<div id="demo" class="collapse">
 				<?php get_search_form(); ?>
 			</div>

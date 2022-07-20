@@ -436,6 +436,7 @@ h6 {
     .main-wrapper {
         margin-left: 0
     }
+
 }
 
 @media (max-width: 767.98px) {
@@ -855,15 +856,83 @@ div.comment:first-of-type {
 }
 
 #navigation .navbar-nav ul a{
-    color: rgba(255, 255, 255, 0.8);
+    color: #ef3c77;
     display: block;
     padding: 0.5rem 1rem;
     font-weight: bold;
     font-size: 1rem;
 }
+
+.menu-item-has-children{
+    position: relative;
+}
+
+.menu-item-has-children > .fa-caret-down{
+    /*position: absolute;
+    right: 15%;
+    top: 15px;*/
+    cursor: pointer;
+}
+
+.menu-item-has-children > a {
+    width: max-content;
+    display: inline;
+}
+
+#menu-main-menu{
+    text-align: center !important;
+}
+
+.sub-menu{
+    background: rgb(38 7 95);
+    margin-top: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+#navigation .navbar-nav ul.sub-menu a{
+    /*color: #555;*/
+}
+
+#navigation .navbar-nav ul.sub-menu a{
+    font-size: 0.9rem;
+    padding: 0.25rem 1rem;
+}
+
+@media( max-width: 992px ){
+    .menu-item-has-children > a{
+        margin-right: 0.5rem;
+    }
+}
+
+.fa-caret-down:before{
+    color: #2c1a4d;
+}
+
+#navigation .navbar-nav .menu-item-has-children a[aria-current="page"]{
+    color: #ef3c77;
+}
+
 /* For Nav Menu Placeholder */
+
+/* For search in sidebar */
 
 #navigation .navbar-nav li a[aria-current="page"]{
     text-decoration: underline;
     color: rgba(0, 0, 0, 0.6);
 }
+
+@media screen and (min-width: 992px) {
+    .header-hr{
+        display: none;
+    }
+    #sidebar_search #searchsubmit{
+        display: none;
+    }
+}
+
+#sidebar_search #searchform{
+    padding-top: 15px;
+    padding-bottom: 30px;
+}
+/* End for search in sidebar* /

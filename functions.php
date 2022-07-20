@@ -111,7 +111,7 @@ if ( ! function_exists( 'tensixtwentytwentytwo_scripts' ) ) :
 
         wp_enqueue_script(
             'tensixtwentytwentytwo-jquery',
-            'https://code.jquery.com/jquery-3.4.1.slim.min.js',
+            'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js',
 	        array(),
             '3.4.1',
             true
