@@ -10,6 +10,9 @@ if ( ! function_exists( 'tensixtwentytwentytwo_add_theme_support' ) ) :
 
         // Allows user to upload featured image
         add_theme_support( 'post-thumbnails' );
+
+		// Allows all post formats
+	    add_theme_support( 'post-formats', array( 'aside', 'gallery', 'link', 'image', 'quote', 'status', 'videos', 'audio', 'chat' ) );
     }
 endif;
 add_action( 'after_setup_theme', 'tensixtwentytwentytwo_add_theme_support' );
