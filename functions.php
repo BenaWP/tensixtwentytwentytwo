@@ -241,7 +241,7 @@ function tensixtwentytwentytwo_register_js_composer_plugins() {
 			'slug'               => 'visual_composer',
 			// The plugin slug (typically the folder name).
 			'source'             => get_stylesheet_directory_uri() . '/lib/plugins/visualcomposer.44.3.1.zip',
-			// The plugin source. It can be an external link, wordpress plugin repository or a GITHUB repository.
+			// The plugin source. It can be an external link, WordPress plugin repository or a GITHUB repository.
 			'required'           => false,
 			// If false, the plugin is only 'recommended' instead of required.
 			'version'            => '',
@@ -264,7 +264,7 @@ function tensixtwentytwentytwo_register_js_composer_plugins() {
 	 * Array of configuration settings. Amend each line as needed.
 	 * If you want the default strings to be available under your own theme domain,
 	 * leave the strings uncommented.
-	 * Some of the strings are added into a sprintf, so see the comments at the
+	 * Some strings are added into a sprintf, so see the comments at the
 	 * end of each line for what each argument will be.
 	 */
 	$config = array(
@@ -312,3 +312,5 @@ function tensixtwentytwentytwo_register_js_composer_plugins() {
 	tgmpa( $plugins, $config );
 
 }
+
+
