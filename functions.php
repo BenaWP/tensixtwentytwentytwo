@@ -313,4 +313,12 @@ function tensixtwentytwentytwo_register_js_composer_plugins() {
 
 }
 
-
+if ( ! function_exists( 'tensixtwentytwentytwo_load_text_domain' ) ) :
+	/**
+	 * Load the plugin text domain
+	 * @return void
+	 */
+	function tensixtwentytwentytwo_load_text_domain() {
+		load_plugin_textdomain( 'tensixtwentytwentytwo', false, dirname( plugin_dir_path( __FILE__ ) ) . '/languages' );
+	}
+endif;
