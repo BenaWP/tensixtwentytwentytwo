@@ -5,5 +5,7 @@ TenSixTwentyTwentyTwo est un thème de blog modern. Il supporte l'éditeur Guten
 # Tags: 
 Blog, Gutenberg, Sidebar, Visual Composeur, Minimal, Simple, Modern, Cool
 
+# Screenshot:
+
 ![Alt text](screenshot.png "a title")
 
